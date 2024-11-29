@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="bigHead" id="Accueil">
+
+            <div class="topHeader">
+                <nav>
+                    <ul class="allItems">
+                        <li class="logo">
+                            <img src="./images/plane_logo.webp" alt="" class="logoIcon">
+                        </li>
+                        <li class="empty"></li>
+                        <li class="item"> <a href="#Acceuil">Accueil</a></li>
+                        <li class="item"> <a href="#Services">Services</a></li>
+                        <li class="item"> <a href="#Souvenirs">Souvenirs</a></li>
+                        <li class="item"> <a href="#Prix">Services</a></li>
+                        <li class="item">  <div class="contact"> <a href="#Contact">Contact</a> </div>   </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+
+            <div class="topHeadermobile">
+                <div class="logomobile">
+                    <img src="./images/plane_logo.webp" alt="" class="mobileIcon">
+                </div>
+
+                <div class="navMenu">
+                    <img src="./images/MenuIconDarkStroke.png" alt="" class="navMenuIcon"
+                    onclick="openNav();">
+
+                </div>
+            </div>
+
+
+           
+
+            <div class="heroSection">
+
+                <div class="boxFlipContainer">
+                    <div class="card" id="card">
+                        <div class="front">
+                            <h2>Bienvenue à Luvain Agency</h2>
+        
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolorum? Quibusdam omnis accusantium voluptatem! Soluta harum nam, necessitatibus voluptatum debitis vitae nisi et, aliquam, nesciunt ad repudiandae qui expedita eveniet.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolorum? Quibusdam omnis accusantium voluptatem! Soluta harum nam, necessitatibus voluptatum debitis vitae nisi et, aliquam, nesciunt ad repudiandae qui expedita eveniet.</p>
+                            <button class="btn" id="goToBack">Savoir plus</button>
+                        </div>
+                        <div class="back"> 
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolorum? Quibusdam omnis accusantium voluptatem! Soluta harum nam, necessitatibus voluptatum debitis vitae nisi et, aliquam, nesciunt ad repudiandae qui expedita eveniet.</p>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero, dolorum? Quibusdam omnis accusantium voluptatem! Soluta harum nam, necessitatibus voluptatum debitis vitae nisi et, aliquam, nesciunt ad repudiandae qui expedita eveniet.</p>
+                             <button class="btn" id="goToFront">Go to front</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="luvePicture">
+                    <img src="./images/Luvanie_prev_ui.png" alt="" class="luveIcon">
+                </div>
+                
+
+            </div>
+            
+
+        </div>
+
+        <div class="stickyheader">
+            <nav>
+                <ul class="allItems">
+                    <li class="logo">
+                        <img src="./images/plane_logo.webp" alt="" class="logoIcon">
+                    </li>
+                    <li class="empty"></li>
+                    <li class="item"> <a href="#Acceuil">Accueil</a></li>
+                    <li class="item"> <a href="#Services">Services</a></li>
+                    <li class="item"> <a href="#Souvenirs">Souvenirs</a></li>
+                    <li class="item"> <a href="#Prix">Services</a></li>
+                    <li class="item">  <div class="contact"> <a href="#Contact">Contact</a> </div>   </li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+        <div class="stickyheader">
+            <nav>
+                <ul class="allItems">
+                    <li class="logo">
+                        <img src="./images/plane_logo.webp" alt="" class="logoIcon">
+                    </li>
+                    <li class="empty"></li>
+                    <li class="item"> <a href="#Acceuil">Accueil</a></li>
+                    <li class="item"> <a href="#Services">Services</a></li>
+                    <li class="item"> <a href="#Souvenirs">Souvenirs</a></li>
+                    <li class="item"> <a href="#Prix">Services</a></li>
+                    <li class="item">  <div class="contact"> <a href="#Contact">Contact</a> </div>   </li>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="stickymobile">
+            <div class="logo">
+                <img src="./images/plane_logo.webp" alt="" class="mobileIcon">
+
+            </div>
+
+            <div class="mobileMenu">
+                <img src="./images/MenuIconDarkStroke.png" alt="" class="menuIcon" 
+                onclick="openNav();">
+            </div>
+
+
+        </div>
+
+        <!-- #####################################
+        ########### Side Nav Menu############
+        ##################################### -->
+
+        <div id="mySidenav" class="mySidenav">
+            <img src="./images/MenuCloseIcon.png" alt="" class="menuClose" onclick="Closenave()">
+            <a href="#Acceuil" onclick="Closenave()">Acceuil</a>
+            <a href="#Services" onclick="Closenave()">Services</a>
+            <a href="#Souvenirs" onclick="Closenave()">Souvenirs</a>
+            <a href="#Prix" onclick="Closenave()">Prix</a>
+            <a href="#Contact" onclick="Closenave()">Contact</a>
+
+
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="Services" id="Services">
+            
+            <h2>Nos services</h2>
+
+            <div class="allServices">
+
+
+                <div class="items">
+                    
+                        <img src="./images/passport.jpg" alt="" class="servicesItems">
+
+
+                    <h3>Demande et renouvellement de passport</h3>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus id impedit perspiciatis magnam voluptatibus 
+                        consequatur unde nostrum sapiente iure quos est consectetur 
+                        consequuntur, fugiat, rerum ex velit deserunt qui delectus! Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit <span class="dots">...</span> <span class="moreText"> Omnis consectetur reiciendis deleniti quod vel excepturi. Dolor, odit eum mollitia 
+                        accusantium exercitationem repellendus quo, eligendi reprehenderit, similique sit voluptatem ex debitis?</p>
+                    </span>
+                    
+                    
+                    <button class="readMoreButton">Read More</button>
+                </div>
+
+
+
+                <div class="items">
+                        <img src="./images/visa.jpg" alt="" class="servicesItems">
+
+                    <h3>Demande et renouvellement de visa</h3>
+                    
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus id impedit perspiciatis magnam voluptatibus 
+                        consequatur unde nostrum sapiente iure quos est consectetur 
+                        consequuntur, fugiat, rerum ex velit deserunt qui delectus! Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit <span class="dots">...</span> <span class="moreText"> Omnis consectetur reiciendis deleniti quod vel excepturi. Dolor, odit eum mollitia 
+                        accusantium exercitationem repellendus quo, eligendi reprehenderit, similique sit voluptatem ex debitis?</p>
+                    </span>
+
+                    <button class="readMoreButton">Read More</button>
+                </div>
+
+
+
+                <div class="items">
+                        <img src="./images/train.webp" alt="" class="servicesItems">
+                    
+                    <h3>Reserver votre transport</h3>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus id impedit perspiciatis magnam voluptatibus 
+                        consequatur unde nostrum sapiente iure quos est consectetur 
+                        consequuntur, fugiat, rerum ex velit deserunt qui delectus! Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit <span class="dots">...</span> <span class="moreText"> Omnis consectetur reiciendis deleniti quod vel excepturi. Dolor, odit eum mollitia 
+                        accusantium exercitationem repellendus quo, eligendi reprehenderit, similique sit voluptatem ex debitis?</p>
+                    </span>
+                  
+                    <button class="readMoreButton">Read More</button>
+                </div>
+
+
+
+                <div class="items">
+                  
+                        <img src="./images/hotel.jpg" alt="" class="servicesItems">
+        
+                   
+                    <h3>Reserver votre hôtel</h3>
+                    
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus id impedit perspiciatis magnam voluptatibus 
+                        consequatur unde nostrum sapiente iure quos est consectetur 
+                        consequuntur, fugiat, rerum ex velit deserunt qui delectus! Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. <span class="moreText"> Omnis consectetur reiciendis deleniti quod vel excepturi. Dolor, odit eum mollitia 
+                        accusantium exercitationem repellendus quo, eligendi reprehenderit, similique sit voluptatem ex debitis?</p>
+                    </span>
+
+                    <button class="readMoreButton">Read More</button>
+                    
+                
+                </div>
+
+                <div class="items">
+    
+                    <img src="./images/car.jpg" alt="" class="servicesItems">
+                    <h3>Reserver votre voiture</h3>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus id impedit perspiciatis magnam voluptatibus 
+                        consequatur unde nostrum sapiente iure quos est consectetur 
+                        consequuntur, fugiat, rerum ex velit deserunt qui delectus! Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit <span class="dots">...</span> <span class="moreText"> Omnis consectetur reiciendis deleniti quod vel excepturi. Dolor, odit eum mollitia 
+                        accusantium exercitationem repellendus quo, eligendi reprehenderit, similique sit voluptatem ex debitis?</p>
+                    </span>
+                    <button class="readMoreButton">Read More</button>
+                </div>
+
+                <div class="items">
+                    
+                        <img src="./images/uber.jpg" alt="" class="servicesItems">
+                        
+                    <h3>Service de guide</h3>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus id impedit perspiciatis magnam voluptatibus 
+                        consequatur unde nostrum sapiente iure quos est consectetur 
+                        consequuntur, fugiat, rerum ex velit deserunt qui delectus! Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit <span class="dots">...</span> <span class="moreText"> Omnis consectetur reiciendis deleniti quod vel excepturi. Dolor, odit eum mollitia 
+                        accusantium exercitationem repellendus quo, eligendi reprehenderit, similique sit voluptatem ex debitis?</p>
+                    </span>
+                    <button class="readMoreButton">Read More</button>   
+                </div>
+
+
+
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="Prix" id="Prix">
+            <h2>Prix de nos activités</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo suscipit eius corrupti rem iste quidem harum. Voluptatibus, voluptate? Veniam neque eum veritatis autem animi pariatur accusamus suscipit sunt et possimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam earum doloremque inventore deleniti alias nisi perspiciatis labore, totam quasi repellendus facere distinctio odit maxime quidem ducimus obcaecati cum nihil ex?</p>
+
+        </div>
+
+
+
+
+
+        <div class="containerSlider" id="Souvenirs">
+            <h2> Quelques-unes de mes activités </h2>
+
+            <div class="slider">
+
+            
+                <button class="prev">&#10094;</button>
+                <div class="slides-container">
+                    <div class="slides">
+                        <img src="./images/luve1.jpg" alt="Image 1">
+                        <img src="./images/luve2.jpg" alt="Image 2">
+                        <img src="./images/luve3.jpg" alt="Image 3">
+                        <img src="./images/luve4.jpg" alt="Image 4">
+                        <img src="./images/luve5.jpg" alt="Image 5">
+                        <img src="./images/luve6.jpg" alt="Image 6">
+                    </div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+    
+            <div class="testimonials" id="testimonial">
+                <h2>What our customers say...</h2>
+                <div class="testimonialcontainer">
+                    <div class="testimonial">
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."                
+                        </p>
+                        <div class="footnote">1 Jan 2022 - Fred Bloggs, UK</div>  
+                    </div>
+                    <div class="testimonial">
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."                
+                        </p>
+                        <div class="footnote">1 Jan 2022 - Fred Bloggs, UK</div>  
+                    </div>
+                    <div class="testimonial">
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."                
+                        </p>
+                        <div class="footnote">1 Jan 2022 - Fred Bloggs, UK</div>  
+                    </div>
+                    <div class="testimonial">
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."                
+                        </p>
+                        <div class="footnote">1 Jan 2022 - Fred Bloggs, UK</div>  
+                    </div>
+                    <div class="testimonial">
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."                
+                        </p>
+                        <div class="footnote">1 Jan 2022 - Fred Bloggs, UK</div>  
+                    </div>
+                    <div class="testimonial">
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."                
+                        </p>
+                        <div class="footnote">1 Jan 2022 - Fred Bloggs, UK</div>  
+                    </div>
+                </div>                      
+            </div>   
+
+        </div>
+        
+
+
+        
+
+        <div class="Nousrejoindre" id="Contact">
+
+            <div class="Nousrejoindrecontainer">
+                <div class="info">
+                    <h2> Nous rejoindre</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, ipsum. Repellendus fugit corrupti deleniti molestiae libero eos voluptatum rem, quibusdam adipisci. Tempora adipisci voluptatum dignissimos quos doloremque culpa sapiente porro.
+                    </p>
+
+                </div>
+
+                <div class="form">
+                    <form name="LuvanieForm" method="post" autocomplete="off" action="https://yrtechforms.com/submit/?{Nousrejoindre}&6010929140610
+                    ">
+                    <input type="text" placeholder="Nom" name="Name" required>
+                    <input type="text" placeholder="Email" name="Email" required>
+                    <textarea name="Message"  placeholder="Message" required></textarea>
+                    <input type="submit" value="Envoyer">
+    
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    
+        
+<!--####3  -->
+    <!-- Footer -->
+
+    <div class="footer">
+        <p>
+            &copy; Copyright (Luvain Agency production)<br />
+            All rights reserved
+        </p>
+    </div>
+
+
+        
+
+
+
+    </main>
+
+    <script src="./index.js" >
+
+   
+
+
+
+
+    </script>
+    
+</body>
+</html>
